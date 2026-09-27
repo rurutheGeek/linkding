@@ -5,7 +5,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-05 18:50+0000\n"
 "PO-Revision-Date: 2026-09-27 00:00+0000\n"
-"Last-Translator: game-server-next contributors\n"
+"Last-Translator: rurutheGeek <126381911+rurutheGeek@users.noreply.github.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,37 +17,37 @@ msgstr ""
 #, python-format
 msgid "%d bookmark was successfully deleted."
 msgid_plural "%d bookmarks were successfully deleted."
-msgstr[0] "%d件のブックマークを削除"
+msgstr[0] "%d件のブックマークを削除しました。"
 
 #: bookmarks/admin.py:167
 #, python-format
 msgid "%d bookmark was successfully archived."
 msgid_plural "%d bookmarks were successfully archived."
-msgstr[0] "%d件のブックマークをアーカイブ"
+msgstr[0] "%d件のブックマークをアーカイブしました。"
 
 #: bookmarks/admin.py:182
 #, python-format
 msgid "%d bookmark was successfully unarchived."
 msgid_plural "%d bookmarks were successfully unarchived."
-msgstr[0] "%d件のブックマークをアーカイブ解除"
+msgstr[0] "%d件のブックマークのアーカイブを解除しました。"
 
 #: bookmarks/admin.py:196
 #, python-format
 msgid "%d bookmark marked as read."
 msgid_plural "%d bookmarks marked as read."
-msgstr[0] "%d件のブックマークを既読に設定"
+msgstr[0] "%d件のブックマークを既読にしました。"
 
 #: bookmarks/admin.py:210
 #, python-format
 msgid "%d bookmark marked as unread."
 msgid_plural "%d bookmarks marked as unread."
-msgstr[0] "%d件のブックマークを未読に設定"
+msgstr[0] "%d件のブックマークを未読にしました。"
 
 #: bookmarks/admin.py:259
 #, python-format
 msgid "%d unused tag was successfully deleted."
 msgid_plural "%d unused tags were successfully deleted."
-msgstr[0] "%d件の未使用タグを削除"
+msgstr[0] "%d件の未使用タグを削除しました。"
 
 #: bookmarks/admin.py:270
 msgid "There were no unused tags in the selection"
@@ -107,7 +107,7 @@ msgstr "タグ「%(name)s」はすでに存在します。"
 
 #: bookmarks/forms.py:180
 msgid "Please enter only one tag name for the target tag."
-msgstr "対象タグにはタグ名を1つだけ入力してください。"
+msgstr "統合先のタグにはタグ名を1つだけ入力してください。"
 
 #: bookmarks/forms.py:189 bookmarks/forms.py:208
 #, python-format
@@ -116,11 +116,11 @@ msgstr "タグ「%(name)s」は存在しません。"
 
 #: bookmarks/forms.py:199
 msgid "Please enter at least one tag to merge."
-msgstr "マージするタグを少なくとも1つ入力してください。"
+msgstr "統合するタグを少なくとも1つ入力してください。"
 
 #: bookmarks/forms.py:214
 msgid "The target tag cannot be selected for merging."
-msgstr "対象タグはマージに選択できません。"
+msgstr "統合先のタグは統合対象に選択できません。"
 
 #: bookmarks/forms.py:255
 msgid "Added ↑"
@@ -179,7 +179,7 @@ msgstr "全員"
 
 #: bookmarks/forms.py:390
 msgid "Standard profile"
-msgstr "標準プロファイル"
+msgstr "標準プロフィール"
 
 #: bookmarks/models.py:189 bookmarks/models.py:194
 msgid "All"
@@ -239,7 +239,7 @@ msgstr "厳密"
 
 #: bookmarks/models.py:388
 msgid "Lax"
-msgstr "緩い"
+msgstr "緩和"
 
 #: bookmarks/models.py:393
 msgid "Alphabetical"
@@ -273,7 +273,7 @@ msgstr "引数"
 
 #: bookmarks/templates/admin/background_tasks.html:10
 msgid "Retries"
-msgstr "再試行"
+msgstr "再試行回数"
 
 #: bookmarks/templates/admin/background_tasks.html:37
 #, python-format
@@ -336,7 +336,7 @@ msgstr "共有を解除しますか？"
 #: bookmarks/templates/bookmarks/form.html:58
 #: bookmarks/templates/bookmarks/form.html:60
 msgid "Notes"
-msgstr "ノート"
+msgstr "メモ"
 
 #: bookmarks/templates/bookmarks/bookmark_page.html:14
 msgid "Bulk edit"
@@ -655,11 +655,11 @@ msgstr "プレビュー"
 
 #: bookmarks/templates/bundles/form.html:8
 msgid "Search terms"
-msgstr "検索キーワード"
+msgstr "検索語"
 
 #: bookmarks/templates/bundles/form.html:12
 msgid "All of these search terms must be present in a bookmark to match."
-msgstr "一致するには、これらの検索キーワードがすべてブックマークに含まれている必要があります。"
+msgstr "一致するには、これらの検索語がすべてブックマークに含まれている必要があります。"
 
 #: bookmarks/templates/bundles/form.html:19
 msgid "At least one of these tags must be present in a bookmark to match."
@@ -959,7 +959,7 @@ msgid ""
 "means the search result will also include bookmarks where a search term "
 "matches otherwise."
 msgstr ""
-"厳密モードでは、タグの先頭にハッシュ記号（#）を付ける必要があります。緩いモードでは、ハッシュ記号なしでもタグを検索できます。ハッシュ記号のないタグは検索語と区別できないため、検索結果には検索語が一致する他のブックマークも含まれる点に注意してください。"
+"厳密モードでは、タグの先頭にハッシュ記号（#）を付ける必要があります。緩和モードでは、ハッシュ記号なしでもタグを検索できます。ハッシュ記号のないタグは検索語と区別できないため、検索結果には検索語が一致する他のブックマークも含まれる点に注意してください。"
 
 #: bookmarks/templates/settings/general.html:129
 msgid "Enable legacy search"
@@ -1108,7 +1108,7 @@ msgid ""
 " bookmark. Setting this option will make all new bookmarks default to "
 "unread. This can be overridden when creating each new bookmark."
 msgstr ""
-"新しいブックマークを作成するときの「未読としてマーク」オプションのデフォルト状態を設定します。このオプションを設定すると、すべての新しいブックマークがデフォルトで未読になります。各ブックマークの作成時に上書きできます。"
+"新しいブックマークを作成するときの「未読にする」オプションのデフォルト状態を設定します。このオプションを設定すると、すべての新しいブックマークがデフォルトで未読になります。各ブックマークの作成時に上書きできます。"
 
 #: bookmarks/templates/settings/general.html:249
 msgid "Create bookmarks as shared by default"
@@ -1468,7 +1468,7 @@ msgstr "ブックマーク"
 
 #: bookmarks/templates/shared/nav_menu.html:11
 msgid "Active"
-msgstr "有効"
+msgstr "アクティブ"
 
 #: bookmarks/templates/shared/nav_menu.html:27
 #: bookmarks/templates/shared/nav_menu.html:91 bookmarks/views/manifest.py:70
